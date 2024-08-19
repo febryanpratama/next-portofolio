@@ -1,11 +1,11 @@
-import { ConvertModelUser, ModelUser } from "@/src/model/modelUser";
-import { loginLoading } from "@/src/core/api/baseApi";
+import { ConvertModelUser, ModelUser } from '@/src/model/modelUser';
+import { loginLoading } from '@/src/core/api/baseApi';
 
 export const login = async (
   email: string,
-  password: string,
+  password: string
 ): Promise<ModelUser | null> => {
-  const resp = loginLoading("/auth/login", {
+  const resp = loginLoading('/auth/login', {
     username: email,
     password: password,
     expiresInMins: 30,

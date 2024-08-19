@@ -1,13 +1,10 @@
-import { useState } from "react";
-import { toast } from "react-toastify";
+import { useState } from 'react';
 
-import { login } from "@/src/repository/auth/authRepository";
+import { login } from '@/src/repository/auth/authRepository';
 
 const LoginService = () => {
-  const [email, setEmail] = useState("emilys");
-  const [password, setPassword] = useState("emilyspass");
-
-
+  const [email, setEmail] = useState('emilys');
+  const [password, setPassword] = useState('emilyspass');
 
   const submit = async () => {
     const resp = await login(email, password);

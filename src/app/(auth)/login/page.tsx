@@ -1,6 +1,6 @@
-"use client";
+'use client';
 // import { title } from "@/src/components/primitives";
-import { LoginView } from "@/src/module/auth/login/loginView";
+import { LoginView } from '@/src/module/auth/login/loginView';
 
 export default function LoginPage() {
   return <LoginView />;

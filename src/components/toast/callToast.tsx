@@ -1,13 +1,13 @@
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify';
 
 export const callToastLoading = (id: string) => {
-  toast.loading("Logging in...", {
+  toast.loading('Logging in...', {
     toastId: id,
   });
 };
 
 export const notify = () => {
-  console.log("notify");
+  console.log('notify');
   // toast.loading("Logging in...",{
   //   toastId: "loading",
   // });
